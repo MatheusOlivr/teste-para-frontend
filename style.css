@@ -101,12 +101,21 @@ body
 /**/	
 #Area-Conteudo
 {
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	word-wrap:break-word;
-
+	display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+	padding-bottom: 150px;
 }
+
+#Area-Conteudo article {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
 .destaques-destaque,.inovacao-noticia,.mundovirtual-noticia
 {
 	width: 90vw;
@@ -234,8 +243,8 @@ body
 
 #Area-Rodape
 {
-	position: absolute;
-	align-items: center;
+	position: fixed;
+	bottom: 0;
 	background-color: black;
 }
 #Area-Rodape__texto
