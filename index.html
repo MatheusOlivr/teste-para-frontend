@@ -6,11 +6,95 @@
         <title>Folha de S.Paulo</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel = "stylesheet" href = "style.css">
+        
     </head>
     <body>
-      
+        <header id = "Cabecalho">
+            <nav id = "area_de_menu">
+                <input type = "checkbox" id = "button_menu">
+                <label for = "button_menu">
+                    <img src = "img/mobile/menu-icon.png">
+                </label>
+                <div id = "Menu">
+                    <ul class = "menu_principal" type = "none">
+                    <li><a href = "#">Pagina Inicial</a></li>
+                    <li>
+                        <a href = "#">Destaques</a>
+                        <ul class = "submenu" type = "none">
+                          <li><a href = "#">Assunto 1</a></li>
+                          <li><a href = "#">Assunto 2</a></li> 
+                          <li><a href = "#">Assunto 3</a></li> 
+                          <li><a href = "#">Assunto 4</a></li>   
+                        </ul>
+                    </li>
+                    <li>
+                        <a href = "#">Listas da semana</a>
+                        <ul class = "submenu" type = "none">
+                          <li><a href = "#">Assunto 1</a></li>
+                          <li><a href = "#">Assunto 2</a></li> 
+                          <li><a href = "#">Assunto 3</a></li> 
+                          <li><a href = "#">Assunto 4</a></li>   
+                        </ul>
+                    </li>
+                    <li><a href = "#">Sobre nos</a></li>
+                    <li><a href = "#">contato</a></li>
+                </ul> 
+                </div>
+            </nav>
+        </header>
+        <section id = "Conteudo">
+                <article id = "Destaques">
+                    <div class = "destaque">
+                        <img  class = "destaque__img" src = "img/mobile/image_rotate.png">
+                        <p class = "destaque__legenda">Destaque 1</p>
+                        <h3>Estudante de engenharia descobre falha estrutural em projeto</h3>
+                    </div>
+                    <div class = "destaque">
+                        <img  class = "destaque__img" src = "img/mobile/image_rotate.png">
+                        <p class = "destaque__legenda">Destaque 1</p>
+                        <h3>Estudante de engenharia descobre falha estrutural em projeto</h3>
+                    </div>
+                </article>
+                <article class = "noticias-do-dia">
+                    <div class = "noticias-do-dia-noticia noticia-01">
+                        <a href = "#"><img src = "img/mobile/highlight-01.png" class = "noticias-do-dia-img img"></a>
+                        <p class = "noticias-do-dia-noticia-legenda">Legenda</p>
+                    </div>
+                    <div class = "noticias-do-dia-noticia noticia-02">
+                        <a href = "#"><img src = "img/mobile/highlight-02.png" class = "noticias-do-dia-img img"></a>
+                        <p class = "noticias-do-dia-noticia-legenda">Legenda</p>
+                    </div>
+                    <div class = "noticias-do-dia-noticia noticia-03">
+                        <a href = "#"><img src = "img/mobile/highlight-03.png" class = "noticias-do-dia-img img"></a>
+                        <p class = "noticias-do-dia-noticia-legenda">Legenda</p>
+                    </div>  
+                </article>
+                <article id = "noticias_tecnologia">
+                    <div class ="noticia_tecnologia">
+                        <img src = "img/mobile/divoltis-porris-01.png" class = "noticia_tecnologia__img">
+                        <h4 class = "noticia_tecnologia__titulo">titulo</h4>
+                        <p class = "noticia_tecnologia__legenda">Legendasadnasifhwuqnguiqhgnqunnaijenguegu9hqu9hq9u</p>
+                        <hr>
+                    </div>
+                    <div class ="noticia_tecnologia">
+                        <img src = "img/mobile/divoltis-porris-02.png" class = "noticia_tecnologia__img">
+                        <h4 class = "noticia_tecnologia__titulo">titulo</h4>
+                        <p class = "noticia_tecnologia__legenda">Legendasadnasifhwuqnguiqhgnqunnaijenguegu9hqu9hq9u</p>
+                        <hr>
+                    </div>
+                    <div class ="noticia_tecnologia">
+                        <img src = "img/mobile/divoltis-porris-03.png" class = "noticia_tecnologia__img">
+                        <h4 class = "noticia_tecnologia__titulo">titulo</h4>
+                        <p class = "noticia_tecnologia__legenda">Legendasadnasifhwuqnguiqhgnqunnaijenguegu9hqu9hq9u</p>
+                        <hr>
+                    </div>
+                </article>
+        </section>
+        <footer id = "rodape"></footer>
     </body>
 </html>

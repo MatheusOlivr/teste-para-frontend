@@ -1,0 +1,181 @@
+:root
+{
+	--corCabecalho: #0eabdb;
+	--corFundoSite: #e0e7e6;
+}
+*
+{
+	padding: 0;
+	margin: 0;
+	font-family:roboto;
+}
+body
+{
+	background-color: var(--corFundoSite);
+}
+img
+{
+	width:300px;
+
+}
+
+#Cabecalho
+{
+	width: 100%;
+	background-color:var(--corCabecalho);
+	background-image: url(img/mobile/logo.png);
+	background-size: 	50%;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	height: 18vh;
+}
+
+/**/
+#area_de_menu
+{
+	width: 50vw;
+	position: relative;
+}
+#area_de_menu input[type="checkbox"]
+{
+	display: none;
+}
+#area_de_menu img
+{
+	position: absolute;
+	height: 8vh;
+	cursor: pointer;
+	z-index: 2;
+}
+#area_de_menu img
+{
+	margin-top: 7vh;
+	height: 5vh;
+	margin-left: 2vh;
+}
+#area_de_menu input[type="checkbox"]:checked ~ #Menu
+{
+	transform: translateX(60vw);
+}
+#Menu
+{
+	z-index: 1;
+	position: absolute;
+	width: 60vw;
+	top: 0;
+	padding-top: 18vh;
+	left: -60vw;
+	height:90vh;
+	background-color: white;
+	transition: transform 0.3s;
+	font-size:25px ;
+}
+
+#Menu a
+{
+	display: block;
+	text-decoration: none;
+	color: black;
+	padding: 1vh;
+	background-color: white;
+}
+#Menu a:hover
+{
+	background-color: var(--corCabecalho);
+}
+.menu_principal
+{
+	padding-top: 20px;
+}
+.menu_principal
+{
+	font-weight: 700;
+	transitionn-top:: 1s;
+}
+.menu_principal li:hover .submenu
+{
+	display: block;
+}
+.submenu
+{
+	font-weight: normal;
+	margin-left: 10px;
+	display: none;
+}
+/**/	
+
+#Conteudo
+{
+	position: absolute;
+	margin-top: 5vh;
+	margin-left: 50%;
+	transform: translateX(	-50%);
+}
+#Destaques
+{
+	color: black;
+}
+.destaque
+{
+	width: 300px;	
+	position: relative;		
+}
+.destaque__img
+{
+	width: 300px;
+		
+}
+.destaque__legenda
+{
+	display: inline-block;
+	position: absolute;
+	font-family: arial;
+	padding: 1vw;
+	top: 145px;
+	left: 0;
+	width: 280px;
+	color: white;
+	background-color: blue;
+}
+.noticias-do-dia
+{
+	margin-top: 25px;
+}
+.noticias-do-dia-noticia
+{
+	position: relative;
+}
+.noticias-do-dia-noticia-legenda
+{
+	position: absolute;
+	background-color: red;
+	width: 280px;
+	padding: 4px;
+	top: 145px;
+	color: white;
+}
+#noticias_tecnologia
+{
+	width: 90vw;
+	margin-top: 10vw;
+}
+.noticia_tecnologia
+{
+	margin-top: 5vw;
+}
+.noticia_tecnologia__img
+{
+
+}
+.noticia_tecnologia__titulo
+{
+	color: blue;
+	text-transform: uppercase;
+}
+.noticia_tecnologia__legenda
+{
+	padding: 10px 0px;
+	word-wrap:break-word;
+}
+
+
