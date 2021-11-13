@@ -10,16 +10,31 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-        <link rel = "stylesheet" href = "style.css">
-        
+        <link rel = "stylesheet" href = "css/style.css">
+        <script>
+            function openMenu()
+            {
+                let menu =  document.getElementById("Menu");
+                if(menu.style.display = "none")
+                {
+                   menu.style.display = "block"; 
+                }
+                else
+                {
+                    menu.style.display = "none";
+                }
+            }
+        </script>
     </head>
     <body>
         <header id = "Area-Cabecalho">
             <nav id = "Area-Menu">
-                <input type = "checkbox" id = "menu-button__input">
-                <label for = "menu-button__input">
-                    <img src = "img/mobile/menu-icon.png" class = "menu-button__img">
+                <div id = "Menu-button" onclick = "openMenu()">
+                     <input type = "checkbox" id = "Menu-button__input">
+                    <label for = "Menu-button__input">
+                    <img src = "img/mobile/menu-icon.png" id = "Menu-button__img">
                 </label>
+                </div>
                 <div id = "Menu">
                     <ul class = "menu-principal" type = "none">
                     <li><a href = "#" class = "menu-principal__item">Pagina Inicial</a></li>
@@ -47,18 +62,8 @@
                 </div>
             </nav>
         </header>
-        <section id = "teste">
-            
-        </section>
         <section id = "Area-Conteudo">
             <article id = "Area-Destaques">
-                <div class = "destaques-destaque">
-                    <div class = "destaques_destaque-imagediv">
-                        <img  class = "destaques-destaque__img" src = "img/mobile/image_rotate.png">
-                        <p class = "destaques-destaque__legenda">Destaque 1</p>
-                    </div>
-                    <h3>Estudante de engenharia descobre falha estrutural em projeto</h3>
-                </div>
                 <div class = "destaques-destaque">
                     <div class = "destaques_destaque-imagediv">
                         <img  class = "destaques-destaque__img" src = "img/mobile/image_rotate.png">
@@ -140,16 +145,18 @@
                 </div>
             </article>
             <article id = "Area-Artes">
-                <h2 id = "Area-Arte__titulo">Arte</h2>
+                <h2 id = "Area-Artes__titulo">Artes</h2>
                 <div class = "arte-artigo">
-                    <img src = "img/mobile/suco_de_cevadiss-01.png" class = "arte-artigo__img">
-                    <h3 class = "arte-artigo__titulo">Titulo</h3>
-                    <p class = "arte-artigo__legenda">Legenda</p>
-                <div class = "arte-artigo">
-                    <img src = "img/mobile/suco_de_cevadiss-01.png" class = "arte-artigo__img">
+                    <img src = "img/mobile/suco_de_cevadiss-01.png" class = "cultura-artigo__img">
                     <h3 class = "arte-artigo__titulo">Titulo</h3>
                     <p class = "arte-artigo__legenda">Legenda</p>
                 </div>
+                <div class = "arte-artigo">
+                    <img src = "img/mobile/suco_de_cevadiss-02.png" class = "arte-artigo__img">
+                    <h3 class = "arte-artigo__titulo">Titulo</h3>
+                    <p class = "arte-artigo__legenda">Legenda</p>
+                </div>
+            </article>
                 <div id = "Clean">
                 </div>
             </article>
@@ -159,13 +166,14 @@
                     <a href = ""><img src = "img/mobile/ads-300x250.png" class = "publicidades-publicidade__img"></a>
                 </div>
             </article>
+            <div id = "Clean">
         </section>
         <footer id = "Area-Rodape">
             <div id = "Area-VoltarAoTopo">
                 <div id = "voltaraotopo-button">
                     <input type = "checkbox" id = "voltaraotopo-button__input">
                     <label for = "voltaraotopo-button__input" id = "voltaraotopo-button__label">
-                       <img src = "img/mobile/arrow_top-icon.png" id = "voltaraotopo-button__img"> 
+                       <a href = "#Area-Cabecalho"><img src = "img/mobile/arrow_top-icon.png" id = "voltaraotopo-button__img"></a>
                     </label>
                 </div>
                 <p id = "voltaraotopo__texto">VOLTAR AO TOPO</p>

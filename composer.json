@@ -1,0 +1,18 @@
+{
+    "name": "matheusolivr/teste-para-frontend",
+    "description": "esse projeto foi criado com a finalidade de eu testar meus conhecimentos em html e css me baseando no projeto que a folha de São Paulo lançou para contratar programadores front-end. Diferente do projeto deles, onde eles pedem para que use grid, eu tomei a liberdade de desenvolver esse usando flex-box e css puro e modificar as aŕeas de conteúdo do site com as imagens e o conteúdo do site com o meu estilo.",
+    "type": "project",
+    "license": "Open Source",
+    "autoload": {
+        "psr-4": {
+            "Matheusolivr\\TesteParaFrontend\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Matheus Olivr",
+            "email": "contato.mateusoliv@gmail.com"
+        }
+    ],
+    "require": {}
+}
