@@ -17,15 +17,17 @@ body
 
 #Area-Cabecalho
 {
-	position: relative;
+	position: fixed;
 	display: flex;
+	top: 0;
 	width: 100vw;
 	background-color:var(--corCabecalho);
 	background-image: url(../img/mobile/logo.png);
-	background-size: 40%;
+	background-size: 40vw;
 	background-repeat: no-repeat;
 	background-position: center bottom;
-	height: 13vh;
+	height: 80px;
+	z-index: 1;
 }
 
 #Menu-button
@@ -33,7 +35,9 @@ body
 	display: flex;
 	align-items: center;
 	width: 20vw;
-	height: 12vh;
+	height: 80px;
+	transition: background 1s;
+	transition: width 0.3s;
 }
 #Menu-button__input
 {
@@ -48,21 +52,17 @@ body
 	margin-left: 4.5vw;
 	cursor: pointer;
 }
-#Menu-button__input:checked#Menu
-{
-	display: none;
-}
-
 #Menu
 {
-	display: none;
+	position: absolute;
+	left: -60vw;
 	width: 60vw;
 	height: 100vh;
-	top: 0;
+	top: 80px;
 	background-color:white;
-	transition: transform 0.3s;
 	font-size:25px;
 	text-align: center;
+	transition: left 0.3s;
 }
 
 .menu-principal
@@ -105,7 +105,7 @@ body
 	display: flex;
     flex-direction: column;
     width: 98vw;
-    margin-top: 8vw;
+    margin-top: 100px;
     justify-content: center;
     align-items: center;
 	word-break: break-all;
@@ -119,6 +119,7 @@ body
 }
 .destaques_destaque-imagediv
 {
+	position: relative;
 }
 .destaques-destaque__img,
 .inovacao-noticia__img,

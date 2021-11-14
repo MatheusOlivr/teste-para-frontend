@@ -15,13 +15,20 @@
             function openMenu()
             {
                 let menu =  document.getElementById("Menu");
-                if(menu.style.display = "none")
+                let buttonInput = document.getElementById("Menu-button__input");
+                let button = document.getElementById("Menu-button");
+                if (buttonInput.checked)
                 {
-                   menu.style.display = "block"; 
+                    menu.style = "left:0vw";
+                    button.style.background = "white";
+                    button.style.width = "60vw";
                 }
                 else
                 {
-                    menu.style.display = "none";
+                    menu.style = "left:-60vw";
+                    button.style.width = "20vw";
+                    button.style.background = "none";
+
                 }
             }
         </script>
