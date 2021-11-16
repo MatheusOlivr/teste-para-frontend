@@ -14,20 +14,19 @@
         <script>
             function openMenu()
             {
-                let menu =  document.getElementById("Menu");
+                let areaMenu =  document.getElementById("Area-Menu");
                 let buttonInput = document.getElementById("Menu-button__input");
-                let button = document.getElementById("Menu-button");
+                let areaButton = document.getElementById("Area-Menu-button");
                 if (buttonInput.checked)
                 {
-                    menu.style = "left:0vw";
-                    button.style.background = "white";
-                    button.style.width = "60vw";
+                    areaMenu.style = "left:0vw";
+                    areaButton.style.background = "white";
+                    areaButton.style.width = "60vw";
                 }
                 else
                 {
-                    menu.style = "left:-60vw";
-                    button.style.width = "20vw";
-                    button.style.background = "none";
+                    areaMenu.style = "left:-60vw";
+                    areaButton.style.width = "0vw";
 
                 }
             }
@@ -35,155 +34,154 @@
     </head>
     <body>
         <header id = "Area-Cabecalho">
-            <nav id = "Area-Menu">
-                <div id = "Menu-button" onclick = "openMenu()">
-                     <input type = "checkbox" id = "Menu-button__input">
-                    <label for = "Menu-button__input">
-                    <img src = "img/mobile/menu-icon.png" id = "Menu-button__img">
+            <div id = "Area-Menu-button" onclick = "openMenu()">
+                <input type = "checkbox" id = "Menu-button__input">
+                <label for = "Menu-button__input">
+                <img src = "img/mobile/menu-icon.png" id = "Menu-button__img">
                 </label>
-                </div>
-                <div id = "Menu">
-                    <ul class = "menu-principal" type = "none">
-                    <li><a href = "#" class = "menu-principal__item">Pagina Inicial</a></li>
+            </div>
+            <nav id = "Area-Menu">
+                    <ul id = "Area-Menu-principal" type = "none">
+                    <li><a href = "#" class = "Menu-principal__item">Pagina Inicial</a></li>
                     <li>
-                        <a href = "#" class = "menu-principal__item">Destaques</a>
-                        <ul class = "menu-submenu" type = "none">
-                          <li><a href = "#" class =  "menu-submenu__item">Assunto 1</a></li>
-                          <li><a href = "#" class =  "menu-submenu__item">Assunto 2</a></li> 
-                          <li><a href = "#" class =  "menu-submenu__item">Assunto 3</a></li> 
-                          <li><a href = "#" class =  "menu-submenu__item">Assunto 4</a></li>   
+                        <a href = "#" class = "Menu-principal__item">Destaques</a>
+                        <ul id = "Area-Menu-submenu" type = "none">
+                          <li><a href = "#" class =  "Menu-submenu__item">Assunto 1</a></li>
+                          <li><a href = "#" class =  "Menu-submenu__item">Assunto 2</a></li> 
+                          <li><a href = "#" class =  "Menu-submenu__item">Assunto 3</a></li> 
+                          <li><a href = "#" class =  "Menu-submenu__item">Assunto 4</a></li>   
                         </ul>
                     </li>
                     <li>
-                        <a href = "#" class = "menu-principal__item">Listas da semana</a>
-                        <ul class = "menu-submenu" type = "none">
-                          <li><a href = "#" class =  "menu-submenu__item">Assunto 1</a></li>
-                          <li><a href = "#" class =  "menu-submenu__item">Assunto 2</a></li> 
-                          <li><a href = "#" class =  "menu-submenu__item">Assunto 3</a></li> 
-                          <li><a href = "#" class =  "menu-submenu__item">Assunto 4</a></li>   
+                        <a href = "#" class = "Menu-principal__item">Listas da semana</a>
+                        <ul id = "Area-Menu-submenu" type = "none">
+                          <li><a href = "#" class =  "Menu-submenu__item">Assunto 1</a></li>
+                          <li><a href = "#" class =  "Menu-submenu__item">Assunto 2</a></li> 
+                          <li><a href = "#" class =  "Menu-submenu__item">Assunto 3</a></li> 
+                          <li><a href = "#" class =  "Menu-submenu__item">Assunto 4</a></li>   
                         </ul>
                     </li>
-                    <li><a href = "#" class = "menu-principal__item">Sobre nos</a></li>
-                    <li><a href = "#" class = "menu-principal__item">contato</a></li>
+                    <li><a href = "#" class = "Menu-principal__item">Sobre nos</a></li>
+                    <li><a href = "#" class = "Menu-principal__item">contato</a></li>
                 </ul> 
-                </div>
             </nav>
         </header>
+        <div id = "topo"></div>
         <section id = "Area-Conteudo">
             <article id = "Area-Destaques">
-                <div class = "destaques-destaque">
-                    <div class = "destaques_destaque-imagediv">
-                        <img  class = "destaques-destaque__img" src = "img/mobile/image_rotate.png">
-                        <p class = "destaques-destaque__legenda">Destaque 1</p>
+                <div class = "Area-Destaques-destaque">
+                    <div class = "Area-Destaques-destaque-image">
+                        <img  class = "Destaques-destaque__img" src = "img/mobile/image_rotate.png">
+                        <p class = "Destaques-destaque__legenda">Destaque 1</p>
                     </div>
                     <h3>Estudante de engenharia descobre falha estrutural em projeto</h3>
                 </div>
             </article>
             <article id = "Area-Inovacao">
-                <div class = "inovacao-noticia">
-                    <a href = "#"><img src = "img/mobile/highlight-01.png" class = "inovacao-noticia__img"></a>
-                    <p class = "inovacao-noticia__legenda">Legenda</p>                      
+                <div class = "Area-Inovacao-noticia">
+                    <a href = "#"><img src = "img/mobile/highlight-01.png" class = "Inovacao-noticia__img"></a>
+                    <p class = "Inovacao-noticia__legenda">Legenda</p>                      
                 </div>
-                <div class = "inovacao-noticia">
-                    <a href = "#"><img src = "img/mobile/highlight-02.png" class = "inovacao-noticia__img"></a>
-                    <p class = "inovacao-noticia__legenda">Legenda</p>                      
+                <div class = "Area-Inovacao-noticia">
+                    <a href = "#"><img src = "img/mobile/highlight-02.png" class = "Inovacao-noticia__img"></a>
+                    <p class = "Inovacao-noticia__legenda">Legenda</p>                      
                 </div>
-                <div class = "inovacao-noticia">
-                    <a href = "#"><img src = "img/mobile/highlight-03.png" class = "inovacao-noticia__img"></a>
-                    <p class = "inovacao-noticia__legenda">Legenda</p>                      
+                <div class = "Area-Inovacao-noticia">
+                    <a href = "#"><img src = "img/mobile/highlight-03.png" class = "Inovacao-noticia__img"></a>
+                    <p class = "Inovacao-noticia__legenda">Legenda</p>                      
                 </div> 
             </article>
             <article id = "Area-MundoVirtual">
-                <div class ="mundovirtual-noticia">
-                    <img src = "img/mobile/divoltis-porris-01.png" class = "mundovirtual-noticia__img">
-                    <h4 class = "mundovirtual-noticia__titulo">titulo</h4>
-                    <p class = "mundovirtual-noticia__legenda">Legendasadnasifhwuqnguiqhgnqunnaijenguegu9hqu9hq9u</p>
+                <div class ="Area-Mundovirtual-noticia">
+                    <img src = "img/mobile/divoltis-porris-01.png" class = "Mundovirtual-noticia__img">
+                    <h4 class = "Mundovirtual-noticia__titulo">titulo</h4>
+                    <p class = "Mundovirtual-noticia__legenda">Legendasadnasifhwuqnguiqhgnqunnaijenguegu9hqu9hq9u</p>
                     <hr>
                 </div>
-                <div class ="mundovirtual-noticia">
-                    <img src = "img/mobile/divoltis-porris-02.png" class = "mundovirtual-noticia__img">
-                    <h4 class = "mundovirtual-noticia__titulo">titulo</h4>
-                    <p class = "mundovirtual-noticia__legenda">Legendasadnasifhwuqnguiqhgnqunnaijenguegu9hqu9hq9u</p>
+                <div class ="Area-Mundovirtual-noticia">
+                    <img src = "img/mobile/divoltis-porris-02.png" class = "Mundovirtual-noticia__img">
+                    <h4 class = "Mundovirtual-noticia__titulo">titulo</h4>
+                    <p class = "Mundovirtual-noticia__legenda">Legendasadnasifhwuqnguiqhgnqunnaijenguegu9hqu9hq9u</p>
                     <hr>
                 </div>
-                <div class ="mundovirtual-noticia">
-                    <img src = "img/mobile/divoltis-porris-03.png" class = "mundovirtual-noticia__img">
-                    <h4 class = "mundovirtual-noticia__titulo">titulo</h4>
-                    <p class = "mundovirtual-noticia__legenda">Legendasadnasifhwuqnguiqhgnqunnaijenguegu9hqu9hq9u</p>
+                <div class ="Area-Mundovirtual-noticia">
+                    <img src = "img/mobile/divoltis-porris-03.png" class = "Mundovirtual-noticia__img">
+                    <h4 class = "Mundovirtual-noticia__titulo">titulo</h4>
+                    <p class = "Mundovirtual-noticia__legenda">Legendasadnasifhwuqnguiqhgnqunnaijenguegu9hqu9hq9u</p>
                     <hr>
                 </div>
             </article>
             <article id = "Area-Listas">
                 <h2 id = "Area-Listas__titulo">Listas da semana</h2>
-                <div class = "listas-lista">
-                    <p class = "listas-lista_descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                <div class = "Listas-lista">
+                    <p class = "Listas-lista_descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut</p>
                     <hr>
                 </div>
-                <div class = "listas-lista">
-                    <p class = "listas-lista_descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                <div class = "Listas-lista">
+                    <p class = "Listas-lista_descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut</p>
                     <hr>
                 </div>
-                <div class = "listas-lista">
-                    <p class = "listas-lista_descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                <div class = "Listas-lista">
+                    <p class = "Listas-lista_descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut</p>
                     <hr>
                 </div>
-                <div class = "listas-lista">
-                    <p class = "listas-lista_descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                <div class = "Listas-lista">
+                    <p class = "Listas-lista_descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut</p>
                     <hr>
                 </div>
             </article>
             <article id = "Area-Cultura">
                 <h2 id = "Area-Cultura__titulo">Cultura</h2>
-                <div class = "cultura-artigo">
-                    <img src = "img/mobile/se_pirulita-01.png" class = "cultura-artigo__img">
-                    <h3 class = "cultura-artigo__titulo">Titulo</h3>
-                    <p class = "cultura-artigo__legenda">Legenda</p>
+                <div class = "Area-Cultura-artigo">
+                    <img src = "img/mobile/se_pirulita-01.png" class = "Cultura-artigo__img">
+                    <h3 class = "Cultura-artigo__titulo">Titulo</h3>
+                    <p class = "Cultura-artigo__legenda">Legenda</p>
                 </div>
-                <div class = "cultura-artigo">
-                    <img src = "img/mobile/se_pirulita-02.png" class = "cultura-artigo__img">
-                    <h3 class = "cultura-artigo__titulo">Titulo</h3>
-                    <p class = "cultura-artigo__legenda">Legenda</p>
+                <div class = "Area-Cultura-artigo">
+                    <img src = "img/mobile/se_pirulita-02.png" class = "Cultura-artigo__img">
+                    <h3 class = "Cultura-artigo__titulo">Titulo</h3>
+                    <p class = "Cultura-artigo__legenda">Legenda</p>
                 </div>
                 <div id = "Clean">
                 </div>
             </article>
             <article id = "Area-Artes">
                 <h2 id = "Area-Artes__titulo">Artes</h2>
-                <div class = "arte-artigo">
-                    <img src = "img/mobile/suco_de_cevadiss-01.png" class = "cultura-artigo__img">
-                    <h3 class = "arte-artigo__titulo">Titulo</h3>
-                    <p class = "arte-artigo__legenda">Legenda</p>
+                <div class = "Area-Arte-artigo">
+                    <img src = "img/mobile/suco_de_cevadiss-01.png" class = "Arte-artigo__img">
+                    <h3 class = "Arte-artigo__titulo">Titulo</h3>
+                    <p class = "Arte-artigo__legenda">Legenda</p>
                 </div>
-                <div class = "arte-artigo">
-                    <img src = "img/mobile/suco_de_cevadiss-02.png" class = "arte-artigo__img">
-                    <h3 class = "arte-artigo__titulo">Titulo</h3>
-                    <p class = "arte-artigo__legenda">Legenda</p>
+                <div class = "Area-Arte-artigo">
+                    <img src = "img/mobile/suco_de_cevadiss-02.png" class = "Arte-artigo__img">
+                    <h3 class = "Arte-artigo__titulo">Titulo</h3>
+                    <p class = "Arte-artigo__legenda">Legenda</p>
                 </div>
             </article>
-                <div id = "Clean">
-                </div>
+            <div id = "Clean">
+            </div>
             </article>
             <article id = "Area-Publicidades">
-                <div class = "publicidades-publicidade">
-                    <p class ="publicidades-publicidade__titulo">Publicidade</p>
-                    <a href = ""><img src = "img/mobile/ads-300x250.png" class = "publicidades-publicidade__img"></a>
+                <div class = "Area-Publicidades-publicidade">
+                    <p class ="Publicidades-publicidade__titulo">Publicidade</p>
+                    <a href = ""><img src = "img/mobile/ads-300x250.png" class = "Publicidades-publicidade__img"></a>
                 </div>
             </article>
             <div id = "Clean">
         </section>
         <footer id = "Area-Rodape">
             <div id = "Area-VoltarAoTopo">
-                <div id = "voltaraotopo-button">
-                    <input type = "checkbox" id = "voltaraotopo-button__input">
-                    <label for = "voltaraotopo-button__input" id = "voltaraotopo-button__label">
-                       <a href = "#Area-Cabecalho"><img src = "img/mobile/arrow_top-icon.png" id = "voltaraotopo-button__img"></a>
+                <div id = "Area-Voltaraotopo-button">
+                    <input type = "checkbox" id = "Voltaraotopo-button__input">
+                    <label for = "Voltaraotopo-button__input" id = "Voltaraotopo-button__label">
+                       <a href = "#topo"><img src = "img/mobile/arrow_top-icon.png" id = "Voltaraotopo-button__img"></a>
                     </label>
                 </div>
-                <p id = "voltaraotopo__texto">VOLTAR AO TOPO</p>
+                <p id = "Voltaraotopo-button__texto">VOLTAR AO TOPO</p>
             </div>
             <p id = "Area-Rodape__texto">Copyright Folha de S.Paulo. Todos os direitos reservados. É proibida a reprodução do conteúdo desta página em qualquer meio de comunicação, eletrônico ou impresso, sem autorização escrita da Folhapress (pesquisa@folhapress.com.br)</p>
         </footer>

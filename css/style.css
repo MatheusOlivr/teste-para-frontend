@@ -30,7 +30,7 @@ body
 	z-index: 1;
 }
 
-#Menu-button
+#Area-Menu-button
 {
 	display: flex;
 	align-items: center;
@@ -52,7 +52,7 @@ body
 	margin-left: 4.5vw;
 	cursor: pointer;
 }
-#Menu
+#Area-Menu
 {
 	position: absolute;
 	left: -60vw;
@@ -65,15 +65,13 @@ body
 	transition: left 0.3s;
 }
 
-.menu-principal
+#Area-Menu-principal
 {
 	padding-top: 20px;
-}
-.menu-principal
-{
 	font-weight: 700;
 }
-.menu-principal__item,.menu-submenu__item
+.Menu-principal__item,
+.Menu-submenu__item
 {
 	display: block;
 	text-decoration: none;
@@ -81,54 +79,56 @@ body
 	padding: 1vh;
 	background-color: white;
 }
-.menu-principal__item:hover
+.Menu-principal__item:hover
 {
 	background-color: var(--corCabecalho);
 }
-.menu-principal li:hover .menu-submenu
+#Area-Menu-principal li:hover #Area-Menu-submenu
 {
 	display: block;
 }
-.menu-submenu
+#Area-Menu-submenu
 {
 	font-weight: normal;
 	margin-left: 10px;
 	display: none;
 }
-.menu-submenu__item:hover
+.Menu-submenu__item:hover
 {
 	background-color: var(--corCabecalho);
 }
-
+#topo
+{
+	margin-bottom: 100px;
+}
 #Area-Conteudo
 {
 	display: flex;
     flex-direction: column;
-    width: 98vw;
-    margin-top: 100px;
+    width: 100vw;
     justify-content: center;
     align-items: center;
 	word-break: break-all;
 }
 
-.destaques-destaque,
-.inovacao-noticia,
-.mundovirtual-noticia
+.Area-Destaques-destaque,
+.Area-Inovacao-noticia,
+.Area-Mundovirtual-noticia
 {
 	width: 98vw;
 }
-.destaques_destaque-imagediv
+.Area-Destaques-destaque-image
 {
 	position: relative;
 }
-.destaques-destaque__img,
-.inovacao-noticia__img,
-.mundovirtual-noticia__img
+.Destaques-destaque__img,
+.Inovacao-noticia__img,
+.Mundovirtual-noticia__img
 {
 	width: 98vw;	
 }
-.destaques-destaque__legenda,
-.inovacao-noticia__legenda
+.Destaques-destaque__legenda,
+.Inovacao-noticia__legenda
 {
 	position: absolute;
 	word-wrap:break-word;
@@ -142,11 +142,11 @@ body
 {
 	margin-top: 10vw;
 }
-.inovacao-noticia
+.Area-Inovacao-noticia
 {
 	position: relative;
 }
-.inovacao-noticia__legenda
+.Inovacao-noticia__legenda
 {
 	background-color: red;
 }
@@ -154,20 +154,16 @@ body
 {
 	margin-top: 10vw;
 }
-.mundovirtual-noticia
+#Area-Mundovirtual-noticia
 {
 	margin-top: 5vw;
 }
-.mundovirtual-noticia__img
-{
-
-}
-.mundovirtual-noticia__titulo
+.Mundovirtual-noticia__titulo
 {
 	color: var(--corTitulo);
 	text-transform: uppercase;
 }
-.mundovirtual-noticia__legenda
+.Mundovirtual-noticia__legenda
 {
 	padding: 5px 0px;
 }
@@ -181,10 +177,10 @@ body
 	color: var(--corTitulo);
 	margin-bottom: 3vw;
 }
-.listas-lista__titulo
+.Listas-lista__titulo
 {
 }
-.listas-lista_descricao
+.Listas-lista_descricao
 {
 	word-break: break-all;
 }
@@ -199,8 +195,8 @@ body
 	justify-content: left;
 	align-items: left;
 }
-.cultura-artigo__img,
-.arte-artigo__img
+.Cultura-artigo__img,
+.Arte-artigo__img
 {
 	width: 50vw;
 	float: left;
@@ -219,12 +215,12 @@ body
 	text-align: center;
 }
 
-.cultura-artigo__titulo
+.Cultura-artigo__titulo
 {
 	text-transform: uppercase;
 }
-.cultura-artigo__legenda,
-.arte-artigo__legenda
+.Cultura-artigo__legenda,
+.Arte-artigo__legenda
 {
 	margin-top: 1.5vh;
 }
@@ -238,14 +234,35 @@ body
 	height: 50vh;
 }
 
-.publicidades-publicidade__titulo
+.Publicidades-publicidade__titulo
 {
 	text-align: right;
 	font-size: 4vw;
 }
-.publicidades-publicidade__img
+.Publicidades-publicidade__img
 {
-	width: 80vw;
+	width: 60vw;
+}
+#Area-VoltarAoTopo
+{
+	background-color: blue;
+	padding: 2vw;
+	height: 5vw;
+}
+#Area-Voltaraotopo-button
+{
+	float: right;
+	padding-left: 2vw;
+}
+#Voltaraotopo-button__input
+{
+	display: none;
+}
+#Voltaraotopo-button__texto
+{
+	text-align: right;
+	font-family: arial;
+	color: white;
 }
 #Area-Rodape
 {
@@ -256,25 +273,5 @@ body
 	word-break: break-all;
 	color: white;
 	padding: 4vw;
-}
-#Area-VoltarAoTopo
-{
-	background-color: blue;
-	padding: 2vw;
-	height: 5vw;
-}
-#voltaraotopo__texto
-{
-	text-align: right;
-	font-family: arial;
-	color: white;
-}
-#voltaraotopo-button
-{
-	float: right;
-	padding-left: 2vw;
-}
-#voltaraotopo-button__input
-{
-	display: none;
+	font-size: 0.8em;
 }
